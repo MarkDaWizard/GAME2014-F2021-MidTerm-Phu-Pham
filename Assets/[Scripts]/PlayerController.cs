@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿//T163-Game Programming
+//GAME2014-F2021-Midterm-Phu-Pham
+//Name: Phu Pham
+//ID: 101250748
+//Date last modified: Oct-23-2021
+//File name: PlayerController.cs
+//Program Desc: Midterm Submission
+//Revision History: Changed vertical identifiers and methods to horizontal orientation, rotated player and changed bounds
+
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
