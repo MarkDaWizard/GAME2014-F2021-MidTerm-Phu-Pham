@@ -87,6 +87,7 @@ public class PlayerController : MonoBehaviour
         {
             // direction is negative
             direction = -1.0f;
+            
         }
 
         if (m_touchesEnded.x != 0.0f)
@@ -104,15 +105,15 @@ public class PlayerController : MonoBehaviour
     private void _CheckBounds()
     {
         // check right bounds
-        if (transform.position.x >= verticalBoundary)
+        if (transform.position.y >= verticalBoundary)
         {
-            transform.position = new Vector3(verticalBoundary, transform.position.y, 0.0f);
+            transform.position = new Vector3(transform.position.x, verticalBoundary, 0.0f);
         }
 
         // check left bounds
-        if (transform.position.x <= -verticalBoundary)
+        if (transform.position.y <= -verticalBoundary)
         {
-            transform.position = new Vector3(-verticalBoundary, transform.position.y, 0.0f);
+            transform.position = new Vector3(transform.position.x, -verticalBoundary, 0.0f);
         }
 
     }
