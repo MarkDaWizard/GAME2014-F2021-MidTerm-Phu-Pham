@@ -37,13 +37,13 @@ public class EnemyController : MonoBehaviour
 
     private void _CheckBounds()
     {
-        // check right boundary
+        // check top boundary
         if (transform.position.y >= verticalBoundary)
         {
             direction = -1.0f;
         }
 
-        // check left boundary
+        // check bottom boundary
         if (transform.position.y <= -verticalBoundary)
         {
             direction = 1.0f;

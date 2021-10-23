@@ -37,6 +37,7 @@ public class BulletController : MonoBehaviour, IApplyDamage
 
     private void _CheckBounds()
     {
+        //Check Right bound
         if (transform.position.x > horizontalBoundary)
         {
             bulletManager.ReturnBullet(gameObject);
